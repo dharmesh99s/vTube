@@ -15,7 +15,7 @@ public partial class signup : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        con = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlcon"].ConnectionString);
+        con = new SqlConnection(ConfigurationManager.ConnectionStrings["Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Dharmesh\Documents\Visual Studio 2013\WebSites\vTube\App_Data\vTube.mdf;Integrated Security=True"].ConnectionString);
         con.Open();
     }
 
